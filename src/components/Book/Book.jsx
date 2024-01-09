@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Book.css';
-class Book extends Component {
-  render() {
-    const { book, onShelfChange } = this.props;
+
+function Book(props) {
+    const { book, onShelfChange } = props;
     const authors = book.authors || [];
 
     return (
@@ -33,6 +33,5 @@ class Book extends Component {
       </div>
     );
   }
-}
 
 export default Book;
